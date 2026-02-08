@@ -21,6 +21,9 @@ make dev
 make run
 ```
 
+**IMPORTANT**
+Run `./rename.sh myapp yourappname` before running your first `make dev` as that will run initial django migrations and `AUTH_USER_MODEL` is set by default to `myapp_user.User`. You should change it to your own custom user models.
+
 Login to the dashboard at `/dashboard/` and using email `admin@myapp.co` and password `picard data`.
 
 ## Notes on Github Codespaces
