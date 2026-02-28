@@ -1,3 +1,12 @@
+This is very opinionate Django project structure that we use at lalokalabs. It includes:-
+
+- `src/` based layout to separate python code from non-python files at the project root, only
+   `./src/` will be added to `PYTHONPATH` resulting in cleaner import, no accidentally any `.py`
+  files suddenly available in the python namespace.
+- Use `uv` to manage dependencies.
+- Frontend assets integration with Vite (from `ext-src/django-umin`).
+- Use pytest for testing - prefer function based tests with fixtures instead of class.
+
 ## Quickstart
 
 ```
